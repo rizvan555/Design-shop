@@ -27,6 +27,7 @@ nav ul {
   font-size: 1.2rem;
   gap: 6vw;
 }
+
 .image-section1,
 .image-section2,
 .image-section3,
@@ -110,8 +111,8 @@ footer article {
   margin-bottom: 10vh;
 }
 footer article div {
-  width: 18vw;
-  gap: 5vh;
+  width: 20vw;
+  gap: 6vh;
 }
 footer article h3 {
   font-size: 1.2rem;
@@ -128,6 +129,10 @@ footer article a {
 footer article span {
   font-weight: bold;
 }
+footer article span:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
 .footer__box1 h3,
 .footer__box3 h3,
 .footer__box2 h3,
@@ -135,13 +140,25 @@ footer article span {
   margin-bottom: 3vh;
   font-weight: bold;
 }
+.footer__box2 {
+  margin-left: 10vw;
+}
 .footer__box2__nav-box {
   display: flex;
   flex-direction: column;
 }
+nav ul li:hover,
+.footer__box2__nav-box a:hover,
+.footer__nav-container__nav-box a:hover {
+  font-weight: bold;
+}
+.footer__nav-container {
+  margin-left: 10vw;
+}
 .footer__nav-container__nav-box a {
   text-decoration: none;
   font-size: 0.8rem;
+  cursor: pointer;
 }
 .footer__nav-container__nav-box {
   display: flex;
@@ -150,4 +167,78 @@ footer article span {
 }
 .footer__nav-container__nav-box a {
   font-size: 1rem;
+}
+
+#newsletter-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 30vh auto;
+  width: 40vw;
+  padding: 30px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#newsletter-section h2 {
+  font-size: 2rem;
+  margin-bottom: 3vh;
+  color: rgb(0, 98, 255);
+}
+#newsletter-section p {
+  font-size: 1rem;
+  margin-bottom: 5vh;
+}
+#input-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+#input-container input {
+  width: 25vw;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: none;
+}
+#input-container button {
+  width: 7vw;
+  border-radius: 5px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+}
+#confirmation-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: azure;
+  border-radius: 5px;
+  padding: 40px 0 40px 0;
+  margin: 30vh auto;
+  width: 40vw;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#confirmation-page h4 {
+  font-size: 2rem;
+  margin-bottom: 10vh;
+  color: rgb(7, 203, 53);
+  text-align: center;
+}
+#confirmation-page a {
+  text-decoration: none;
+  width: 20vw;
+  padding: 10px 20px;
+  margin-left: 15vw;
+  border-radius: 5px;
+  background-color: #ff0000;
+  border: none;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: center;
 }
